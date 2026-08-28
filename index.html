@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแรก | Shin Portfolio (Silver Wolf Lv.999)</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&family=Prompt:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 1. INITIAL LOADING SCREEN (โหลดเฉพาะตอนเข้าครั้งแรก) -->
+    <div id="initial-loader">
+        <div class="loader-content">
+            <div class="sw-avatar-pixel">SW</div>
+            <div class="loader-title">SYSTEM HACKING... LV.999</div>
+            <div class="loader-bar-bg">
+                <div class="loader-bar-fill" id="loader-bar-fill"></div>
+            </div>
+            <div class="loader-subtext">LOADING SHIN_PORTFOLIO // <span id="loader-percent">0%</span></div>
+        </div>
+    </div>
+
+    <!-- 2. CURSOR & SCANLINES -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+    <div class="scanlines"></div>
+
+    <!-- 3. HEADER NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">SHIN<span style="color:var(--sw-pink)">.DEV</span> [LV.999]</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">หน้าแรก</a></li>
+                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
+                <li><a href="education.html">การศึกษา</a></li>
+                <li><a href="hobby.html">งานอดิเรก</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 4. MAIN CONTENT -->
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <span class="badge">✦ ETHER EDIT & GAME DEV ✦</span>
+                <h1>สวัสดีครับ, ผม <span class="neon-blue-text">ฌิน</span></h1>
+                <h2>ณิชณกุล กล่อมแสร์ (Shin)</h2>
+                <p>อายุ 16 ปี | นักเรียน ม.3/2 โรงเรียนจอมทอง จ.เชียงใหม่ มุ่งมั่นสร้างสรรค์ระบบเกมและโค้ดดิจิทัล</p>
+                <div class="hero-buttons">
+                    <a href="profile.html" class="btn cyber-btn">รู้จักฉันมากขึ้น</a>
+                    <a href="contact.html" class="btn cyber-btn-outline">ติดต่อฉัน</a>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <img src="https://placehold.co/400x400/00E5FF/070510?text=SHIN+LV999" alt="Shin" class="hero-img">
+            </div>
+        </section>
+
+        <!-- TERMINAL BOX -->
+        <section class="container" style="margin-bottom: 3rem;">
+            <div class="card terminal-box">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div style="color:var(--sw-cyan); font-size:0.85rem;">SILVER_WOLF_ETHER_NET.exe</div>
+                </div>
+                <div class="terminal-body">
+                    <p class="term-line"><span class="term-user">shin@ether-domain:~$</span> access --target profile</p>
+                    <p class="term-response">> ACCESS GRANTED. LEVEL 999 HACKER READY.</p>
+                    <p class="term-line"><span class="term-user">shin@ether-domain:~$</span> status</p>
+                    <p class="term-response">> SCHOOL: CHOMTONG | CLASS: M.3/2 | AGE: 16</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nichnakul Klomsae (Shin). Silver Wolf Edition. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
